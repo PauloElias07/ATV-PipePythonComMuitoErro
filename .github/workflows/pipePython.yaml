@@ -27,7 +27,7 @@ jobs:
         run: pytest -v
 
       - name: Verificar cobertura de codigo
-        run: pytest --cov=. --cov-fail-under=
+        run: pytest --cov=. --cov-fail-under=90
 
       - name: Analise de Seguranca
         run: pytest test_operacoes.py -v
