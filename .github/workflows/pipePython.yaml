@@ -1,0 +1,32 @@
+name: PipePython do Erro
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  PrimeiroErro:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Preparar ambiente
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Dependencias
+        run: pip install -r requirements.txt
+
+      - name: Analise Estatica(Linter) Flake8
+        run: flake8 .
+
+      - name: Executar testes unitarios
+        run: pytest -v
+
+      - name: Verificar cobertura de codigo
+        run: pytest --cov=. --cov-fail-under=
+
+      - name:
