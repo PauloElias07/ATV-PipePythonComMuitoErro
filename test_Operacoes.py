@@ -1,5 +1,6 @@
 from calculadora import soma, sub, multi, divi
 
+
 def test_soma():
     assert soma(5, 5) == 10
 
