@@ -24,7 +24,7 @@ jobs:
         run: flake8 .
 
       - name: Executar testes unitarios
-        run: pytest test_operacoes.py -v
+        run: pytest path/to/test_operacoes.py -v
 
       - name: Verificar cobertura de codigo
         run: pytest --cov=. --cov-fail-under=90
