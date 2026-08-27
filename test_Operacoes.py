@@ -6,7 +6,7 @@ def test_soma():
 
 
 def test_sub():
-    assert sub(2, 6) == 4
+    assert sub(6, 2) == 4
 
 
 def test_multi():
