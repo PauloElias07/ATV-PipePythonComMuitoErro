@@ -12,4 +12,3 @@ def divi(a, b):
         raise ValueError("Numero indivisivel!")
     return a / b
 
-API_KEY = "123123123144547rfgert445634"

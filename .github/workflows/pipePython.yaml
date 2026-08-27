@@ -31,3 +31,8 @@ jobs:
 
       - name: Analise de Seguranca
         run: pytest test_operacoes.py -v
+
+      - name: Verificar Chaves expostas
+        uses: gitleaks/gitleaks-actions@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
