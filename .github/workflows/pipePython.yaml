@@ -24,13 +24,13 @@ jobs:
         run: flake8 .
 
       - name: Executar testes unitarios
-        run: pytest -v
+        run: pytest test_operacoes.py -v
 
       - name: Verificar cobertura de codigo
         run: pytest --cov=. --cov-fail-under=90
 
       - name: Analise de Seguranca
-        run: pytest test_operacoes.py -v
+        run: bandit -r
 
       - name: Verificar Chaves expostas
         uses: gitleaks/gitleaks-actions@v2
