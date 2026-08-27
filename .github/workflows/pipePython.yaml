@@ -30,7 +30,7 @@ jobs:
         run: pytest --cov=. --cov-fail-under=90
 
       - name: Analise de Seguranca
-        run: bandit -r
+        run: bandit -r .
 
       - name: Verificar Chaves expostas
         uses: gitleaks/gitleaks-action@v2
