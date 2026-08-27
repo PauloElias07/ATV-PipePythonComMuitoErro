@@ -33,6 +33,6 @@ jobs:
         run: bandit -r
 
       - name: Verificar Chaves expostas
-        uses: gitleaks/gitleaks-actions@v2
+        uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
