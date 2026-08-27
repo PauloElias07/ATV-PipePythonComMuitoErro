@@ -1,5 +1,3 @@
-import pytest
-
 from calculadora import soma, sub, multi, divi
 
 def test_soma():
