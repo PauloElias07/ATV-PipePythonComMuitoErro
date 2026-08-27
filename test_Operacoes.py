@@ -9,7 +9,7 @@ def test_sub():
     assert sub(2, 6) == 8
 
 def test_multi():
-    assert multi(4, 2)== 8
+    assert multi(4, 2) == 8
 
 def test_divi():
-    assert divi(10, 2)== 5
+    assert divi(10, 2) == 5
