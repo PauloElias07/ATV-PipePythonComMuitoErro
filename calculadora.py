@@ -14,3 +14,7 @@ def divi(a, b):
     if b == 0:
         raise ValueError("Numero indivisivel!")
     return a / b
+
+
+while True:
+    print(2 + 2)
